@@ -1,0 +1,12 @@
+com\example\Cabinet.class
+com\example\LoggerMagazine.class
+com\example\LoginServlet.class
+com\example\UserService.class
+com\example\Magazine.class
+com\example\MagazineService.class
+com\example\DatabaseConnection.class
+com\example\MainEntrance.class
+com\example\User.class
+com\example\RegistrationServlet.class
+com\example\RedactMagazine.class
+com\example\Reload.class
