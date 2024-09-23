@@ -16,17 +16,14 @@ public class RemoveFromCartServlet extends HttpServlet {
         HttpSession session = request.getSession();
         String magazineName = request.getParameter("magazineName");
 
-        // Retrieve the shopping cart list
         List<String> shopList = (List<String>) session.getAttribute("shopList");
 
         if (shopList != null && magazineName != null && !magazineName.trim().isEmpty()) {
-            shopList.remove(magazineName); // Remove the item from the cart
+            shopList.remove(magazineName);
         }
 
-        // Update the session attribute
         session.setAttribute("shopList", shopList);
 
-        // Redirect back to the shopping cart page
         response.sendRedirect("shoppingcart");
     }
 }
